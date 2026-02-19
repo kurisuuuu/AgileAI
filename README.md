@@ -171,6 +171,6 @@ Not intended for production use without careful review.
 
 ## 📜 License
 
-TBD (MIT / Apache-2.0 recommended for OSS).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
