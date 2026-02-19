@@ -41,15 +41,19 @@ This server exposes agile/project-management capabilities as **MCP tools**, allo
 
 ## 🏗 High-Level Architecture
 
+```text
 AI Agent (MCP Client)
-|
-| MCP Protocol
-|
+       │
+       │ MCP Protocol
+       ▼
 Agile MCP Server
-|
-| Connectors / Adapters
-|
-| Jira | Trello | GitHub | Linear | etc. |
+       │
+       │ Connectors / Adapters
+       ▼
+┌──────┬────────┬────────┬────────┐
+│ Jira │ Trello │ GitHub │ Linear │ etc.
+└──────┴────────┴────────┴────────┘
+```
 
 The server abstracts differences between tools and enforces safety rules.
 
@@ -92,17 +96,19 @@ The server abstracts differences between tools and enforces safety rules.
 
 ## 📂 Project Structure
 
+```text
 /src
   /mcp          → MCP tool definitions & server setup
   /connectors   → Adapter implementations
-    /github     → GitHub Projects connector
-    /mock       → Mock connector for testing
+    /github     │ → GitHub Projects connector
+    /mock       │ → Mock connector for testing
   /models       → Zod schemas & TypeScript types
   /core         → Shared logic (auth, validation)
 /tests          → Unit & integration tests
 package.json    → Project dependencies
 tsconfig.json   → TypeScript configuration
 GEMINI.md       → Development mandates
+```
 
 ---
 
