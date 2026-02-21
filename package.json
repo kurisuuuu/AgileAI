@@ -1,0 +1,38 @@
+{
+  "name": "agileai",
+  "version": "1.0.0",
+  "description": "An open-source MCP-compatible server that allows AI agents to interact with agile and project management tools through a standardized interface.",
+  "main": "build/index.js",
+  "type": "module",
+  "bin": {
+    "agileai": "./build/index.js"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "build": "tsc && chmod 755 build/index.js",
+    "test": "vitest run",
+    "dev": "tsx watch src/index.ts"
+  },
+  "files": ["build"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurisuuuu/AgileAI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kurisuuuu/AgileAI/issues"
+  },
+  "homepage": "https://github.com/kurisuuuu/AgileAI#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
