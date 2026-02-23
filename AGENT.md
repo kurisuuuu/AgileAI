@@ -173,6 +173,7 @@ Agents interacting with this server should behave as disciplined tool users:
 
 Possible expansions:
 
+- **OAuth2 Authentication:** Implement local CLI-based auth and browser-based OAuth flows to separate user and agent identities.
 - Multi-provider routing
 - Cross-tool synchronization
 - Event / webhook integration
